@@ -4,6 +4,10 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 4.16"
     }
+	spacelift = {
+      source  = "spacelift-io/spacelift"
+      version = "1.1.6"
+    }
   }
 
   required_version = ">= 1.2.0"
@@ -11,7 +15,6 @@ terraform {
 
 provider "aws" {
   region  = "us-west-2"
-  shared_credentials_files = ["~/.aws/credentials"]
 }
 
 resource "aws_instance" "app_server" {
