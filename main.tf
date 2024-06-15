@@ -17,6 +17,7 @@ provider "aws" {
   region  = "us-west-2"
   access_key = ASIAQ55YAFBEHJWAAIG2
   secret_key = A9D/4Xh153zEUEjqC08pIbnS81ixF0kcyIZHJvYc
+  
 }
 
 resource "aws_instance" "app_server" {
